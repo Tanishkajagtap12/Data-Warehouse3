@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Panel - Project Status Tracking System</title>
+    <link rel="stylesheet" type="text/css" href="project_master_data.css">
+</head>
+
+<body>
+    <div class="admin-container">
+
+        <div class="product-image">
+            
+
+            <label for="image-upload" class="image-label">Product Image</label>
+            <div class="image-box">
+                <input type="file" id="image-upload" accept="image/*" onchange="previewImage(this)">
+                <img id="image-preview" src="placeholder.jpg" alt="">
+            </div>
+        </div>
+            <div class="admin-content">
+                <h2>Summary</h2>
+                <form id="summary-form">
+                    <div class="summary-field">
+                        <label for="project-number">Project Number</label>
+                        <input type="text" id="project-number" name="project-number">
+                    </div>
+                    <div class="summary-field">
+                        <label for="project-name">Project Name</label>
+                        <input type="text" id="project-name" name="project-name">
+                    </div>
+                    <div class="summary-field">
+                        <label for="project-manager">Project Manager</label>
+                        <input type="text" id="project-manager" name="project-manager">
+                    </div>
+                    <div class="summary-field green-bg">
+                        <label for="project-scope">Project Scope</label>
+                        <input type="text" id="project-scope" name="project-scope">
+                    </div>
+                    <div class="summary-field">
+                        <label for="r-d-location">R&D Location</label>
+                        <input type="text" id="r-d-location" name="r-d-location">
+                    </div>
+                    <div class="summary-field">
+                        <label for="production-location">Production Location</label>
+                        <input type="text" id="production-location" name="production-location">
+                    </div>
+                    <div class="summary-field">
+                        <label for="asil-classification">ASIL Classification</label>
+                        <input type="text" id="asil-classification" name="asil-classification">
+                    </div>
+                    <div class="summary-field green-bg">
+                        <label for="volume">Volume</label>
+                        <input type="text" id="volume" name="volume">
+                    </div>
+                    <div class="summary-field">
+                        <label for="peak-volume">Peak Volume</label>
+                        <input type="text" id="peak-volume" name="peak-volume">
+                    </div>
+                    <div class="summary-field">
+                        <label for="schaeffler-sop">Schaeffler SOP</label>
+                        <input type="text" id="schaeffler-sop" name="schaeffler-sop">
+                    </div>
+                </form>
+            </div>
+    </div>
+    <script>
+        function previewImage(input) {
+            var preview = document.getElementById('image-preview');
+            var file = input.files[0];
+            var reader = new FileReader();
+        
+            reader.onload = function() {
+                preview.src = reader.result;
+            };
+        
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+    <title>Developer Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="developer_dashboard.css">
+    
+    <script>
+        function loadContent(page) {
+            var contentFrame = document.getElementById("content-frame");
+            contentFrame.src = page;
+        }
+    </script>
+    <img src="" alt="">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand">Schaeffler Data Warehouse</div>
+        <div class="login-container">
+            <a href="login.html" class="logout-button">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+          <div class="logo"><img src="schaeffler-logo.svg" alt="Your Logo"></div>
+          
+        </div>
+      </div>
+    
+    <div class="container">
+        <div class="dashboard">
+            <h1>Project Team</h1>
+            
+            <ul class="options">
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('cover-page.html')">Cover Page</a></li>
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('project_master_data.html')">Project Master
+                        Data</a></li>
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('development_maturity_1.html')">Development
+                        Maturity (1/2)</a></li>
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('development_maturity_2.html')">Development
+                        Maturity (2/2)</a></li>
+                <li><a class="active_menu_link"href="javascript:void(0);" onclick="loadContent('quality_overview.html')">Quality Overview</a>
+                </li>
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('time_status.html')">Time Status</a></li>
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('cost_status.html')">Cost Status</a></li>
+                
+                <li><a class="active_menu_link" href="javascript:void(0);" onclick="loadContent('Risk.html')">Risk Overview</a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <iframe id="content-frame" src="cover-page.html"></iframe>
+        </div>
+    </div>
+    <script src="developer_dashboard.html"></script>
+
+</body>
+
+</html>

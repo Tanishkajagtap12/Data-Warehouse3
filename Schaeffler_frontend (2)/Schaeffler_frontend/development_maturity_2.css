@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body{
+    margin: 0;
+    font-family: Roboto,Arial,sans-serif;
+}
+.panel-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    
+}
+/* 
+/* Style the table */
+
+#status-table {
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+#status-table th,
+#status-table td {
+    padding: 5px;
+    /* text-align: left; */
+    border:  1px solid #646464;
+    max-width: 100px;
+    text-align: center;
+    
+}
+:focus {
+    outline: none;
+}
+
+#status-table th {
+    max-width: 100px;
+    background-color: #ebeef0;
+    color: #646464;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#status-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#status-table textarea {
+    width: 100px;
+    padding: 5px;
+    height: 100%;
+
+    /* Set a fixed height for text areas */
+}
+
+/* Style the radio buttons */
+#status-table input[type="radio"] {
+    width: 100%;
+
+}
+
+
+
+*/ .status-light {
+    width: 30px;
+    /* Adjust the width as needed */
+    height: 30px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    /* Makes them circular */
+    display: inline-block;
+    margin-right: 2px;
+    /* Spacing between bullet points */
+}
+
+/* Styles for the overall status bullet points */
+.overall-status .status-light {
+    width: 40px;
+    /* Increase the width to make them bigger */
+    height: 40px;
+    /* Increase the height to make them bigger */
+}
+
+/* Increase the size of radio buttons */
+input[type="radio"] {
+    width: 10px;
+    /* Adjust the width as needed */
+    height: 10px;
+    /* Adjust the height as needed */
+}
+
+/* Style the radio circles */
+.radio-circle {
+    display: inline-block;
+    width: 20px;
+    /* Adjust the width as needed */
+    height: 20px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    /* Makes them circular */
+    background-color: #ccc;
+    /* Default background color */
+    margin-right: 5px;
+    /* Spacing between bullet points */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+/* Color the radio circles based on radio button values */
+input[name="Testing"][value="red"]:checked+.radio-circle {
+    background-color: red;
+}
+
+input[name="Testing"][value="yellow"]:checked+.radio-circle {
+    background-color: yellow;
+}
+
+input[name="Testing"][value="green"]:checked+.radio-circle {
+    background-color: green;
+}
+
+input[name="SW"][value="red"]:checked+.radio-circle {
+    background-color: red;
+}
+
+input[name="SW"][value="yellow"]:checked+.radio-circle {
+    background-color: yellow;
+}
+
+input[name="SW"][value="green"]:checked+.radio-circle {
+    background-color: green;
+}
+
+input[name="HW"][value="red"]:checked+.radio-circle {
+    background-color: red;
+}
+
+input[name="HW"][value="yellow"]:checked+.radio-circle {
+    background-color: yellow;
+}
+
+input[name="HW"][value="green"]:checked+.radio-circle {
+    background-color: green;
+}
+
+h2 {
+    font-size: 24px;
+    color: green;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: #646464;
+    letter-spacing: .04rem;
+    font-weight: 300;
+}
+
+h4 {
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+
+
+.radio-input {
+    display: none;
+    /* Hide the radio input fields */
+}
+
+.status-container {
+    display: flex;
+
+
+
+}
+
+
+
+.status-radio:checked+.status-option .status-indicator {
+    border: 2px solid #ccc;
+    /* Fixed grey border */
+}
+
+.status-option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    /* Fixed grey border */
+}
+
+.status-radio:checked+.status-option .status-indicator {
+    background-color: transparent;
+    /* Clear the background color when selected */
+}
+
+
+
+/* .overall-status */
+table#1 {
+    background-color: #ccc;
+}
+
+table {
+    width: 140px;
+    /* Reduce the width of the table */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    text-align: center;
+    margin-top: 0%;
+    /* margin-left: 20%; */
+    height: 120px;
+    /* border:  1px solid #ced5da; */
+    /* background-color: #ece7e7; */
+}
+th, td {
+    text-align: left;
+    color: #646464;
+    max-width: 100px; /* Set a fixed width for td elements */
+    overflow: hidden; /* Hide the content that overflows the fixed width */
+    /* white-space: nowrap; Prevent text from wrapping to the next line */
+    padding: 8px; /* Adjust the padding as needed */
+    height: 20px; /* Set a fixed height for td elements */
+    line-height: 20px; /* Match the line height with the fixed height */
+}
+
+
+th {
+    background-color: #f2f2f2;
+    /* max-width: 50px; */
+    color: #646464;
+    
+    /* Reduce the width of the first column */
+}
+
+td {
+    max-width: 100px;
+    background-color: #fff;
+    border: 1px solid #ebeef0;
+
+
+    /* Set a maximum width for other columns */
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 5px;
+}
+
+.status-cell {
+    text-align: center;
+}
+
+.status-circle {
+    width: 20px;
+    /* Reduce the size of the circles */
+    height: 20px;
+    /* Reduce the size of the circles */
+    border:  1px solid #646464;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: inset;
+    cursor: pointer;
+    text-align: center;
+}
+
+.status-option {
+    /* display: flex; */
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.status-indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+}
+
+.status-radio:checked+.status-option .status-indicator {
+    background-color: transparent;
+}
+
+#green:checked+.status-option .status-indicator {
+    background-color: green;
+    border: 1px solid #ccc;
+
+
+}
+
+#yellow:checked+.status-option .status-indicator {
+    background-color: yellow;
+    border: 1px solid #ccc;
+
+
+}
+
+#red:checked+.status-option .status-indicator {
+    background-color: red;
+    border: 1px solid #ccc;
+
+
+}
+
+.status-radio {
+    display: none;
+}

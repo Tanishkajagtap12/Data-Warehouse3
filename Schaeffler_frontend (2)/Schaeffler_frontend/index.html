@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/08e5b9d3d3bceb72ce1d0a8c44b739a5a8d8a9a9/dist/FileSaver.js"></script>
+
+    <link rel="stylesheet" href="control.css">
+    <title>Your Website Title</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="brand">Schaeffler Data Warehouse</div>
+    <div class="login-container">
+        <a href="login.html" class="logout-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </a>
+      <div class="logo"><img src="schaeffler-logo.svg" alt="Your Logo"></div>
+      
+    </div>
+  </div>
+  <h1>CONTROL CENTRAL</h1>
+
+  <div class="container">
+    
+    <button class="add-project" onclick="toggleButton()">Add Project</button>
+    <button onclick="exportToExcel()">Export</button>
+    
+    <hr>
+    
+    <form id="projectForm" style="display: none;">
+      <div class="grid-container">
+          <div class="right">
+              <label for="projectName">Project Name</label>
+              <input type="text" id="projectName" placeholder="Enter Project Name">
+          </div>
+          <div class="left">
+              <label for="projectClassification">Project Classification</label>
+              <input type="text" id="projectClassification" placeholder="Enter Classification">
+          </div>
+          <div class="right">
+              <label for="projectType">Project Type</label>
+              <input type="text" id="projectType" placeholder="Enter Project Type">
+          </div>
+          <div class="left">
+              <label for="projectNumber">Project Number</label>
+              <input type="text" id="projectNumber" placeholder="Enter Project Number">
+          </div>
+          <div class="right">
+              <label for="asil">ASIL</label>
+              <input type="text" id="asil" placeholder="Enter ASIL">
+          </div>
+      
+          <button type="button" class="submit-button" onclick="addProject()">Submit</button>
+        </div>
+    </form>
+    
+    <table id="projectTable">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Project Classification</th>
+          <th>Project Type</th>
+          <th>Project Number</th>
+          <th>ASIL</th>
+          <th>OverAll Status</th>
+          <th>HW</th>
+          <th>SYS</th>
+          <th>EE</th>
+          <th>SW</th>
+          <th>ME</th>
+        </tr>
+      </thead>
+      <tbody id="projectData"></tbody>
+    </table>
+  </div>
+  <script src="control.js"></script>
+  <!-- <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/08e5b9d3d3bceb72ce1d0a8c44b739a5a8d8a9a9/dist/FileSaver.js"></script> -->
+
+  </body>
+</html>

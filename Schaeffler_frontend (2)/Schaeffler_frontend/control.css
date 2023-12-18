@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-size: 15px;
+    font-weight: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #646464;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #646464;
+  }
+  
+  .logout-button span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #646464;
+  }
+  
+  .logout-button:hover span {
+    color: #000;
+  }
+  
+  .logo img {
+    width: 200px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add this line for a grey border */
+}
+
+
+  
+  h1 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    color: #646464;
+    margin: .6em 0;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  form {
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: .04rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* border: 1px solid #ccc;  */
+    background-color: #ebeef0; /* Set background color */
+    padding: 20px; /* Optional: Add padding for better visual appearance */
+    margin-top: 20px;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: normal;
+    color: #646464;
+    margin-bottom: 5px; /* Adjust as needed */
+    font-size: 13px; /* Set font size */
+
+
+}
+
+input[type="text"] {
+    padding: 10px; /* Adjust padding for smaller size */
+    border-radius: 0; /* Set border-radius to 0 to remove curves */
+    border: 1px solid #ccc;
+    color: #646464;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 17px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+    outline: none; /* Remove default focus outline */
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Set color for the hr */
+    margin-top: 20px; /* Set margin-top to 20px */
+}
+button {
+    background-color: #00893d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 1.25;
+    font-size: 17px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensures the button doesn't take full width */
+    margin-left: 30px;
+    text-transform: uppercase;
+
+    
+}
+
+button:hover {
+    background-color: #006628;
+}
+
+
+  /* button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: normal;
+  } */
+  
+  /* button:last-child {
+    background-color: #007bff;
+    margin-left: 10px;
+  } */
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    color: #646464;
+    background-color:  white;
+    font-weight: 200;
+    letter-spacing: .04rem;
+  }
+  
+  th {
+    background-color:  #ebeef0;
+  }
+  
+  
+  
+  .green { background-color: #8bc34a; color: #646464; }
+  .yellow { background-color: #ffeb3b; color: #646464; }
+  .red { background-color: #f44336; color: #646464; }
+/* Add a specific class to the submit button */
+.submit-button {
+    background-color: #00893d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 1.25;
+    font-size: 17px;
+    width: 120px;
+    text-transform: uppercase;
+    margin-left: 0%;
+    letter-spacing: .05rem;
+
+}
+
+.submit-button:hover {
+    background-color: #006628;
+}
+/* Styles for the Add Project button */
+.add-project {
+    background-color: #00893d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 1.25;
+    font-size: 17px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.add-project::before {
+    position: absolute;
+    left: 10px;
+}
+
+/* Change content to "-" when the class is present */
+.add-project.minus::before {
+    content: "";
+}

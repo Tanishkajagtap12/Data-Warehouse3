@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add CSS for the main grid layout */
+        body {
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px; /* Adjust as needed */
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+
+        /* Add CSS for the left grid */
+        .left-grid {
+            gap: 10px;
+        }
+
+        /* Add CSS for the left grid rows and columns */
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        /* Add CSS for the right grid */
+        .right-grid {
+            display: grid;
+        }
+
+        /* Add CSS for the right-corner box container */
+        .box-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        h2 {
+            font-size: 25px;
+            color: #646464;
+            letter-spacing: .04rem;
+            font-weight: 300;
+            margin-left: 50px;
+        }
+
+        /* Updated CSS for the right-corner box */
+        .box {
+            margin-left: 50px;
+
+            width: 1000px; /* Adjust width as needed */
+            height: 500px; /* Adjust height as needed */
+            margin-top: 20px; /* Adjust margin as needed */
+            background-color: #ccc; /* Color of the box */
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-grid">
+            <div class="left-grid">
+                <!-- First row in the left grid -->
+                <div class="row">
+                    <div class="section overall-status">
+                        <h2>Risk Status</h2>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

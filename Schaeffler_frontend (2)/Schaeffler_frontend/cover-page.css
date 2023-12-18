@@ -1,0 +1,51 @@
+/* cover-page.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    padding: 20px; /* Add some padding for spacing */
+    color: #646464; /* Set text color to #646464 */
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
+    text-align: left; /* Align text to the left */
+}
+
+.image img {
+    width: 1120px; /* Set a specific width, adjust as needed */
+    height: 350px; /* Set a specific height, adjust as needed */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0; /* Remove default margins */
+}
+
+h2 {
+    color: #00893d; /* Set text color to #00893d */
+    font-size: 25px;
+    font-weight: 300;
+}
+h3{
+    color: #646464;
+    font-weight: 300;
+    font-size: 15px;
+
+
+}
+h4{
+    color: #00893d; /* Set text color to #00893d */
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+h4::before {
+    content: " Date:"; /* Add " Date:" before the text */
+    color: #00893d; /* Set the color for " Date" to #00893d */
+}
+
+h4::after {
+    content: " STSIPL"; /* Add " STSIPL" after the text */
+}
+

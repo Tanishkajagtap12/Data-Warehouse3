@@ -1,0 +1,19 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    // Validate email and password
+    if (email && password) {
+        // Authenticate the user using a back-end service or API
+        authenticateUser(email, password);
+    } else {
+        alert('Please enter your email and password.');
+    }
+});
+
+function authenticateUser(email, password) {
+    // Implement the actual authentication logic here
+    // This could involve sending a request to the server and checking the response
+}

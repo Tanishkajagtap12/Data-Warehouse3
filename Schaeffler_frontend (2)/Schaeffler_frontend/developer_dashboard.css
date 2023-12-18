@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #ced5da; Add a border at the bottom of the navbar */
+}
+
+.brand {
+    font-size: 15px;
+    font-weight: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #646464;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #646464;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.logout-button span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+.logout-button:hover span {
+    color: #000;
+  }
+  
+
+.logo img {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+}
+.dashboard {
+    width: 250px;
+    height: 593px; /* Set your desired height */
+    background-color: #f8f9fa;
+    padding: 19px;
+    position: relative;
+}
+
+  
+.dashboard h1 {
+    color: #646464;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 300;
+    margin-left: 12px;
+    
+
+  } 
+  
+  .options {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .options li {
+    margin-bottom: 10px;
+  }
+  
+  .options a {
+    color: #646464;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    /* border-radius: 5px; */
+    /* border-bottom: 1px solid #ced5da; */
+    transition: color 0.3s; /* Transition color on hover */
+    margin-bottom: 15px;
+  }
+  /* ... Your existing styles ... */
+
+.options a:focus {
+    color: #00893d; 
+    border-left: 7px solid #00893d;
+    border-radius: 0;
+    border-top: 1px solid #ced5da;
+    border-bottom: 1px solid #ced5da;
+    background-color: #f0f0f0; /* Add a background color for the selected option */
+}
+
+/* ... Your existing styles ... */
+
+  
+
+.options a:hover,
+.options a.selected {
+    color: #00893d; 
+    border-left: 7px solid #00893d;
+    border-radius: 0;
+    border-top: 1px solid #ced5da;
+    border-bottom: 1px solid #ced5da;
+}
+
+.options a.selected {
+    background-color: #f0f0f0; /* Add a background color for the selected option */
+}
+
+/* ... Your existing styles ... */
+
+
+
+#content-frame {
+    width: 400%;  /* Make the iframe take up 100% of the width of its container */
+    height: 100vh;  /* Make the iframe take up 100% of the viewport height */
+    border: none;  /* Remove the border around the iframe */
+}
+
+  
+
